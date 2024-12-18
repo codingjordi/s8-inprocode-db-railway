@@ -3,7 +3,7 @@ import { pool } from "../db.js"
 export const getFountains = async (req, res) => {
     try {
         const [result] = await pool.query(
-            "SELECT * FROM tasks"
+            "SELECT * FROM fountains"
         )
         res.json(result)
         console.log(result)
